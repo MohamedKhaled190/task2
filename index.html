@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title text-center py-5">
+            <h1>Bookmarker</h1>
+        </div>
+        <div class="form d-flex align-items-center justify-content-center flex-column" >
+            <h2 class=" text-center py-4 fs-4">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites 
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="site-name  w-100 mb-4">
+                <label for="site-name" class="pb-2 fw-bolder "><i class="fa-solid fa-bookmark pe-2"></i>site Name</label>
+                <input type="text" id="site-name" class="form-control" placeholder="BookMark Name">
+            </div>
+            <div class="site-link  w-100 mb-4">
+                <label for="site-link" class="pb-2 fw-bolder "><i class="fa-solid fa-bookmark pe-2"></i>URL</label>
+                <input type="text" id="site-link" class="form-control" placeholder="BookMark link">
+            </div>
+            <button class="btn py-1 px-5 fs-5 text-light submit" onclick="addBook()" type="button">submit</button>
+        </div>
+        <table class="table mt-4 text-center bg-light">
+            <thead>
+                <tr><th class="text-capitalize">index</th>
+                <th class="text-capitalize">Website Name</th>
+                <th class="text-capitalize">Visit</th>
+                <th class="text-capitalize">Delete</th></tr>
+            </thead>
+            <tbody id="tableContent">
+                
+              </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

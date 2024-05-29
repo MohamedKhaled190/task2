@@ -1,0 +1,43 @@
+::selection{
+ background-color: #fec260;
+ color: black;
+}
+h1{
+    font-family: "Pacifico", cursive;
+}
+body{
+    background-color: #f7ecde;
+
+}
+/*  */
+.title{
+    border-bottom: 2px dotted black;
+}
+h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+        font-family: "Righteous", cursive;
+}
+#site-name:focus{
+    outline: 2px solid #fec260;
+  
+}
+label{
+    letter-spacing: 2px;
+}
+.submit{
+    background-color: #d1512d;
+}
+.submit:hover{
+    background-color: #943319;
+}
+a{
+    text-decoration: none;
+}
+.btn-visit{
+    background-color: #9eb23b;
+}
+.btn-visit:hover{
+    background-color: #707f22;
+}
